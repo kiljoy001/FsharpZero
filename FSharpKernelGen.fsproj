@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="FSharpToC.fs" />
+    <Compile Include="KernelMain.fs" />
+    <Compile Include="GenerateKernel.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>

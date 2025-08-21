@@ -1,0 +1,263 @@
+DIGEST 5853d0154a5af8eef33cb242962bdd22
+Ffsharp_clean_parser
+R56:69 Coq.Lists.List <> <> lib
+R87:104 Coq.Strings.String <> <> lib
+R122:136 Coq.Arith.Arith <> <> lib
+R146:158 Coq.Lists.List ListNotations <> mod
+ind 185:189 <> Token
+constr 205:208 <> TInt
+constr 229:231 <> TId
+constr 255:261 <> TLParen
+constr 265:271 <> TRParen
+constr 275:279 <> TPlus
+constr 283:286 <> TEOF
+R215:218 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R212:214 Coq.Init.Datatypes <> nat ind
+R219:223 fsharp_clean_parser <> Token:1 ind
+R241:244 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R235:240 Coq.Strings.String <> string ind
+R245:249 fsharp_clean_parser <> Token:1 ind
+R290:294 fsharp_clean_parser <> Token:1 ind
+scheme 185:189 <> Token_rect
+scheme 185:189 <> Token_ind
+scheme 185:189 <> Token_rec
+scheme 185:189 <> Token_sind
+ind 326:329 <> Expr
+constr 345:348 <> EInt
+constr 368:371 <> EVar
+constr 394:397 <> EAdd
+R355:358 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R352:354 Coq.Init.Datatypes <> nat ind
+R359:362 fsharp_clean_parser <> Expr:3 ind
+R381:384 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R375:380 Coq.Strings.String <> string ind
+R385:388 fsharp_clean_parser <> Expr:3 ind
+R405:408 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R401:404 fsharp_clean_parser <> Expr:3 ind
+R413:416 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R409:412 fsharp_clean_parser <> Expr:3 ind
+R417:420 fsharp_clean_parser <> Expr:3 ind
+scheme 326:329 <> Expr_rect
+scheme 326:329 <> Expr_ind
+scheme 326:329 <> Expr_rec
+scheme 326:329 <> Expr_sind
+rec 450:459 <> ParseState
+proj 476:479 <> toks
+proj 497:499 <> pos
+R483:486 Coq.Init.Datatypes <> list ind
+R488:492 fsharp_clean_parser <> Token ind
+R503:505 Coq.Init.Datatypes <> nat ind
+ind 539:544 <> Result
+constr 571:572 <> Ok
+constr 608:610 <> Err
+binder 547:547 <> A:8
+R577:580 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R576:576 fsharp_clean_parser <> A:8 var
+R591:594 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R581:590 fsharp_clean_parser <> ParseState rec
+R595:600 fsharp_clean_parser <> Result:9 ind
+R602:602 fsharp_clean_parser <> A:8 var
+R620:623 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R614:619 Coq.Strings.String <> string ind
+R624:629 fsharp_clean_parser <> Result:9 ind
+R631:631 fsharp_clean_parser <> A:8 var
+scheme 539:544 <> Result_rect
+scheme 539:544 <> Result_ind
+scheme 539:544 <> Result_rec
+scheme 539:544 <> Result_sind
+R645:646 fsharp_clean_parser <> Ok constr
+R645:646 fsharp_clean_parser <> Ok constr
+R663:665 fsharp_clean_parser <> Err constr
+R663:665 fsharp_clean_parser <> Err constr
+def 712:715 <> peek
+R722:731 fsharp_clean_parser <> ParseState rec
+binder 718:718 <> s:11
+R736:741 Coq.Init.Datatypes <> option ind
+R743:747 fsharp_clean_parser <> Token ind
+R754:762 Coq.Lists.List <> nth_error def
+R774:776 fsharp_clean_parser <> pos proj
+R778:778 fsharp_clean_parser <> s:11 var
+R765:768 fsharp_clean_parser <> toks proj
+R770:770 fsharp_clean_parser <> s:11 var
+def 817:820 <> next
+R827:836 fsharp_clean_parser <> ParseState rec
+binder 823:823 <> s:12
+R841:850 fsharp_clean_parser <> ParseState rec
+R857:863 fsharp_clean_parser <> mkState constr
+R866:869 fsharp_clean_parser <> toks proj
+R871:871 fsharp_clean_parser <> s:12 var
+R875:875 Coq.Init.Datatypes <> S constr
+R878:880 fsharp_clean_parser <> pos proj
+R882:882 fsharp_clean_parser <> s:12 var
+def 918:926 <> parse_int
+R933:942 fsharp_clean_parser <> ParseState rec
+binder 929:929 <> s:13
+R947:952 fsharp_clean_parser <> Result ind
+R954:957 fsharp_clean_parser <> Expr ind
+R970:973 fsharp_clean_parser <> peek def
+R975:975 fsharp_clean_parser <> s:13 var
+R986:989 Coq.Init.Datatypes <> Some constr
+R992:995 fsharp_clean_parser <> TInt constr
+R1003:1004 fsharp_clean_parser <> Ok constr
+R1016:1019 fsharp_clean_parser <> next def
+R1021:1021 fsharp_clean_parser <> s:13 var
+R1007:1010 fsharp_clean_parser <> EInt constr
+R1033:1035 fsharp_clean_parser <> Err constr
+def 1097:1105 <> parse_var
+R1112:1121 fsharp_clean_parser <> ParseState rec
+binder 1108:1108 <> s:14
+R1126:1131 fsharp_clean_parser <> Result ind
+R1133:1136 fsharp_clean_parser <> Expr ind
+R1149:1152 fsharp_clean_parser <> peek def
+R1154:1154 fsharp_clean_parser <> s:14 var
+R1165:1168 Coq.Init.Datatypes <> Some constr
+R1171:1173 fsharp_clean_parser <> TId constr
+R1181:1182 fsharp_clean_parser <> Ok constr
+R1194:1197 fsharp_clean_parser <> next def
+R1199:1199 fsharp_clean_parser <> s:14 var
+R1185:1188 fsharp_clean_parser <> EVar constr
+R1211:1213 fsharp_clean_parser <> Err constr
+def 1287:1299 <> parse_primary
+R1306:1315 fsharp_clean_parser <> ParseState rec
+binder 1302:1302 <> s:15
+R1320:1325 fsharp_clean_parser <> Result ind
+R1327:1330 fsharp_clean_parser <> Expr ind
+R1343:1346 fsharp_clean_parser <> peek def
+R1348:1348 fsharp_clean_parser <> s:15 var
+R1359:1362 Coq.Init.Datatypes <> Some constr
+R1365:1368 fsharp_clean_parser <> TInt constr
+R1376:1377 fsharp_clean_parser <> Ok constr
+R1389:1392 fsharp_clean_parser <> next def
+R1394:1394 fsharp_clean_parser <> s:15 var
+R1380:1383 fsharp_clean_parser <> EInt constr
+R1401:1404 Coq.Init.Datatypes <> Some constr
+R1407:1409 fsharp_clean_parser <> TId constr
+R1417:1418 fsharp_clean_parser <> Ok constr
+R1430:1433 fsharp_clean_parser <> next def
+R1435:1435 fsharp_clean_parser <> s:15 var
+R1421:1424 fsharp_clean_parser <> EVar constr
+R1442:1445 Coq.Init.Datatypes <> Some constr
+R1447:1453 fsharp_clean_parser <> TLParen constr
+R1514:1515 fsharp_clean_parser <> Ok constr
+R1527:1530 fsharp_clean_parser <> next def
+R1532:1532 fsharp_clean_parser <> s:15 var
+R1518:1521 fsharp_clean_parser <> EInt constr
+R1544:1546 fsharp_clean_parser <> Err constr
+def 1612:1616 <> parse
+R1628:1631 Coq.Init.Datatypes <> list ind
+R1633:1637 fsharp_clean_parser <> Token ind
+binder 1619:1624 <> tokens:16
+R1642:1647 fsharp_clean_parser <> Result ind
+R1649:1652 fsharp_clean_parser <> Expr ind
+R1659:1671 fsharp_clean_parser <> parse_primary def
+R1674:1680 fsharp_clean_parser <> mkState constr
+R1682:1687 fsharp_clean_parser <> tokens:16 var
+ind 1778:1787 <> WellFormed
+constr 1811:1816 <> WF_Int
+constr 1854:1859 <> WF_Var
+constr 1897:1902 <> WF_Add
+R1795:1798 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1791:1794 fsharp_clean_parser <> Expr ind
+binder 1827:1827 <> n:19
+R1830:1839 fsharp_clean_parser <> WellFormed:17 ind
+R1842:1845 fsharp_clean_parser <> EInt constr
+R1847:1847 fsharp_clean_parser <> n:19 var
+binder 1870:1870 <> x:20
+R1873:1882 fsharp_clean_parser <> WellFormed:17 ind
+R1885:1888 fsharp_clean_parser <> EVar constr
+R1890:1890 fsharp_clean_parser <> x:20 var
+binder 1913:1914 <> e1:21
+binder 1916:1917 <> e2:22
+R1933:1936 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1920:1929 fsharp_clean_parser <> WellFormed:17 ind
+R1931:1932 fsharp_clean_parser <> e1:21 var
+R1950:1953 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1937:1946 fsharp_clean_parser <> WellFormed:17 ind
+R1948:1949 fsharp_clean_parser <> e2:22 var
+R1954:1963 fsharp_clean_parser <> WellFormed:17 ind
+R1966:1969 fsharp_clean_parser <> EAdd constr
+R1971:1972 fsharp_clean_parser <> e1:21 var
+R1974:1975 fsharp_clean_parser <> e2:22 var
+scheme 1778:1787 <> WellFormed_ind
+scheme 1778:1787 <> WellFormed_sind
+prf 2013:2032 <> parser_deterministic
+binder 2043:2048 <> tokens:23
+binder 2050:2051 <> r1:24
+binder 2053:2054 <> r2:25
+R2076:2079 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2071:2073 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2059:2063 fsharp_clean_parser <> parse def
+R2065:2070 fsharp_clean_parser <> tokens:23 var
+R2074:2075 fsharp_clean_parser <> r1:24 var
+R2097:2100 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2092:2094 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2080:2084 fsharp_clean_parser <> parse def
+R2086:2091 fsharp_clean_parser <> tokens:23 var
+R2095:2096 fsharp_clean_parser <> r2:25 var
+R2103:2105 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2101:2102 fsharp_clean_parser <> r1:24 var
+R2106:2107 fsharp_clean_parser <> r2:25 var
+prf 2178:2194 <> parser_terminates
+binder 2205:2210 <> tokens:26
+R2215:2221 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2228:2229 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2222:2227 <> result:27
+R2242:2244 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2230:2234 fsharp_clean_parser <> parse def
+R2236:2241 fsharp_clean_parser <> tokens:26 var
+R2245:2250 fsharp_clean_parser <> result:27 var
+R2277:2281 fsharp_clean_parser <> parse def
+R2277:2281 fsharp_clean_parser <> parse def
+prf 2369:2384 <> parse_wellformed
+binder 2395:2400 <> tokens:28
+binder 2402:2405 <> expr:29
+binder 2407:2407 <> s:30
+R2436:2439 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2424:2426 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2412:2416 fsharp_clean_parser <> parse def
+R2418:2423 fsharp_clean_parser <> tokens:28 var
+R2427:2428 fsharp_clean_parser <> Ok constr
+R2435:2435 fsharp_clean_parser <> s:30 var
+R2430:2433 fsharp_clean_parser <> expr:29 var
+R2440:2449 fsharp_clean_parser <> WellFormed ind
+R2451:2454 fsharp_clean_parser <> expr:29 var
+R2499:2503 fsharp_clean_parser <> parse def
+R2520:2532 fsharp_clean_parser <> parse_primary def
+R2552:2555 fsharp_clean_parser <> peek def
+R2558:2564 fsharp_clean_parser <> mkState constr
+R2552:2555 fsharp_clean_parser <> peek def
+R2558:2564 fsharp_clean_parser <> mkState constr
+R2658:2663 fsharp_clean_parser <> WF_Int constr
+R2658:2663 fsharp_clean_parser <> WF_Int constr
+R2719:2724 fsharp_clean_parser <> WF_Var constr
+R2719:2724 fsharp_clean_parser <> WF_Var constr
+R2784:2789 fsharp_clean_parser <> WF_Int constr
+R2784:2789 fsharp_clean_parser <> WF_Int constr
+prf 2985:2999 <> parse_type_safe
+binder 3010:3015 <> tokens:31
+R3020:3020 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3079:3086 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3121:3121 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3021:3027 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3034:3035 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3028:3031 <> expr:32
+binder 3033:3033 <> s:33
+R3060:3063 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3048:3050 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3036:3040 fsharp_clean_parser <> parse def
+R3042:3047 fsharp_clean_parser <> tokens:31 var
+R3051:3052 fsharp_clean_parser <> Ok constr
+R3059:3059 fsharp_clean_parser <> s:33 var
+R3054:3057 fsharp_clean_parser <> expr:32 var
+R3064:3073 fsharp_clean_parser <> WellFormed ind
+R3075:3078 fsharp_clean_parser <> expr:32 var
+R3087:3093 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3097:3098 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3094:3096 <> msg:34
+R3111:3113 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3099:3103 fsharp_clean_parser <> parse def
+R3105:3110 fsharp_clean_parser <> tokens:31 var
+R3114:3116 fsharp_clean_parser <> Err constr
+R3118:3120 fsharp_clean_parser <> msg:34 var
+R3159:3163 fsharp_clean_parser <> parse def
+R3159:3163 fsharp_clean_parser <> parse def

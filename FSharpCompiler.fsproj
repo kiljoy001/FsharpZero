@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors />
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="FSharpAST.fs" />
+    <Compile Include="FSharpLexer.fs" />
+    <Compile Include="FSharpParser.fs" />
+    <Compile Include="FSharpCodeGen.fs" />
+    <Compile Include="FSharpCompiler.fs" />
+    <Compile Include="TestAST.fs" />
+  </ItemGroup>
+
+</Project>

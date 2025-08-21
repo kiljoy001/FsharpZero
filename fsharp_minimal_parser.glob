@@ -1,0 +1,71 @@
+DIGEST ab2a1854ad2041455bc115cc505aa97a
+Ffsharp_minimal_parser
+R58:72 Coq.Arith.Arith <> <> lib
+ind 115:118 <> Expr
+constr 123:126 <> ENum
+R133:136 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R130:132 Coq.Init.Datatypes <> nat ind
+R137:140 fsharp_minimal_parser <> Expr:1 ind
+scheme 115:118 <> Expr_rect
+scheme 115:118 <> Expr_ind
+scheme 115:118 <> Expr_rec
+scheme 115:118 <> Expr_sind
+ind 178:182 <> Token
+constr 187:190 <> TNum
+constr 209:212 <> TEOF
+R197:200 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R194:196 Coq.Init.Datatypes <> nat ind
+R201:205 fsharp_minimal_parser <> Token:3 ind
+R216:220 fsharp_minimal_parser <> Token:3 ind
+scheme 178:182 <> Token_rect
+scheme 178:182 <> Token_ind
+scheme 178:182 <> Token_rec
+scheme 178:182 <> Token_sind
+def 256:260 <> parse
+R267:271 fsharp_minimal_parser <> Token ind
+binder 263:263 <> t:5
+R276:279 fsharp_minimal_parser <> Expr ind
+R292:292 fsharp_minimal_parser <> t:5 var
+R303:306 fsharp_minimal_parser <> TNum constr
+R313:316 fsharp_minimal_parser <> ENum constr
+R324:327 fsharp_minimal_parser <> TEOF constr
+R332:335 fsharp_minimal_parser <> ENum constr
+def 380:389 <> WellFormed
+R396:399 fsharp_minimal_parser <> Expr ind
+binder 392:392 <> e:7
+R420:420 fsharp_minimal_parser <> e:7 var
+R427:430 fsharp_minimal_parser <> ENum constr
+R437:440 Coq.Init.Logic <> True ind
+prf 481:494 <> parser_correct
+binder 505:505 <> t:9
+R510:519 fsharp_minimal_parser <> WellFormed def
+R522:526 fsharp_minimal_parser <> parse def
+R528:528 fsharp_minimal_parser <> t:9 var
+prf 616:635 <> parser_deterministic
+binder 646:646 <> t:10
+binder 648:649 <> e1:11
+binder 651:652 <> e2:12
+R669:672 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R664:666 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R657:661 fsharp_minimal_parser <> parse def
+R663:663 fsharp_minimal_parser <> t:10 var
+R667:668 fsharp_minimal_parser <> e1:11 var
+R685:688 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R680:682 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R673:677 fsharp_minimal_parser <> parse def
+R679:679 fsharp_minimal_parser <> t:10 var
+R683:684 fsharp_minimal_parser <> e2:12 var
+R691:693 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R689:690 fsharp_minimal_parser <> e1:11 var
+R694:695 fsharp_minimal_parser <> e2:12 var
+prf 766:782 <> parser_terminates
+binder 793:793 <> t:13
+R798:804 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R806:807 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 805:805 <> e:14
+R815:817 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R808:812 fsharp_minimal_parser <> parse def
+R814:814 fsharp_minimal_parser <> t:13 var
+R818:818 fsharp_minimal_parser <> e:14 var
+R845:849 fsharp_minimal_parser <> parse def
+R845:849 fsharp_minimal_parser <> parse def

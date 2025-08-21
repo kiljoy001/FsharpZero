@@ -1,0 +1,170 @@
+DIGEST e574fb06cb4667a5d2a99dc45175639e
+Ffsharp_lexer_verified
+R113:126 Coq.Lists.List <> <> lib
+R144:161 Coq.Strings.String <> <> lib
+R179:193 Coq.Arith.Arith <> <> lib
+R211:223 Coq.Bool.Bool <> <> lib
+R233:245 Coq.Lists.List ListNotations <> mod
+def 281:284 <> Char
+R289:291 Coq.Init.Datatypes <> nat ind
+def 325:335 <> InputStream
+R340:343 Coq.Init.Datatypes <> list ind
+R345:348 fsharp_lexer_verified <> Char def
+ind 381:385 <> Token
+constr 401:404 <> TInt
+constr 425:430 <> TIdent
+constr 456:463 <> TKeyword
+constr 487:495 <> TOperator
+constr 519:525 <> TLParen
+constr 529:535 <> TRParen
+constr 539:548 <> TSemicolon
+constr 552:558 <> TEquals
+constr 562:566 <> TPlus
+constr 570:575 <> TMinus
+constr 581:584 <> TEOF
+R411:414 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R408:410 Coq.Init.Datatypes <> nat ind
+R415:419 fsharp_lexer_verified <> Token:1 ind
+R440:443 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R434:439 Coq.Strings.String <> string ind
+R444:448 fsharp_lexer_verified <> Token:1 ind
+R473:476 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R467:472 Coq.Strings.String <> string ind
+R477:481 fsharp_lexer_verified <> Token:1 ind
+R505:508 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R499:504 Coq.Strings.String <> string ind
+R509:513 fsharp_lexer_verified <> Token:1 ind
+R588:592 fsharp_lexer_verified <> Token:1 ind
+scheme 381:385 <> Token_rect
+scheme 381:385 <> Token_ind
+scheme 381:385 <> Token_rec
+scheme 381:385 <> Token_sind
+rec 621:628 <> LexState
+proj 648:652 <> input
+proj 671:678 <> position
+proj 689:701 <> current_token
+R656:666 fsharp_lexer_verified <> InputStream def
+R682:684 Coq.Init.Datatypes <> nat ind
+R705:710 Coq.Init.Datatypes <> option ind
+R712:716 fsharp_lexer_verified <> Token ind
+def 764:771 <> is_digit
+R778:781 fsharp_lexer_verified <> Char def
+binder 774:774 <> c:7
+R786:789 Coq.Init.Datatypes <> bool ind
+R796:799 Coq.Init.Datatypes <> andb def
+R814:818 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R813:813 fsharp_lexer_verified <> c:7 var
+R804:808 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R809:809 fsharp_lexer_verified <> c:7 var
+def 856:863 <> is_alpha
+R870:873 fsharp_lexer_verified <> Char def
+binder 866:866 <> c:8
+R878:881 Coq.Init.Datatypes <> bool ind
+R888:890 Coq.Init.Datatypes <> orb def
+R939:942 Coq.Init.Datatypes <> andb def
+R957:961 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R956:956 fsharp_lexer_verified <> c:8 var
+R947:951 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R952:952 fsharp_lexer_verified <> c:8 var
+R893:896 Coq.Init.Datatypes <> andb def
+R911:915 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R910:910 fsharp_lexer_verified <> c:8 var
+R901:905 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R906:906 fsharp_lexer_verified <> c:8 var
+def 991:1003 <> is_whitespace
+R1010:1013 fsharp_lexer_verified <> Char def
+binder 1006:1006 <> c:9
+R1018:1021 Coq.Init.Datatypes <> bool ind
+R1028:1030 Coq.Init.Datatypes <> orb def
+R1059:1062 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R1058:1058 fsharp_lexer_verified <> c:9 var
+R1033:1035 Coq.Init.Datatypes <> orb def
+R1049:1052 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R1048:1048 fsharp_lexer_verified <> c:9 var
+R1039:1042 Coq.Arith.PeanoNat <> ::nat_scope:x_'=?'_x not
+R1038:1038 fsharp_lexer_verified <> c:9 var
+def 1129:1132 <> peek
+R1139:1146 fsharp_lexer_verified <> LexState rec
+binder 1135:1135 <> s:10
+R1151:1156 Coq.Init.Datatypes <> option ind
+R1158:1161 fsharp_lexer_verified <> Char def
+R1168:1176 Coq.Lists.List <> nth_error def
+R1189:1196 fsharp_lexer_verified <> position proj
+R1198:1198 fsharp_lexer_verified <> s:10 var
+R1179:1183 fsharp_lexer_verified <> input proj
+R1185:1185 fsharp_lexer_verified <> s:10 var
+def 1214:1220 <> advance
+R1227:1234 fsharp_lexer_verified <> LexState rec
+binder 1223:1223 <> s:11
+R1239:1246 fsharp_lexer_verified <> LexState rec
+R1253:1262 fsharp_lexer_verified <> mkLexState constr
+R1265:1269 fsharp_lexer_verified <> input proj
+R1271:1271 fsharp_lexer_verified <> s:11 var
+R1275:1275 Coq.Init.Datatypes <> S constr
+R1278:1285 fsharp_lexer_verified <> position proj
+R1287:1287 fsharp_lexer_verified <> s:11 var
+R1292:1304 fsharp_lexer_verified <> current_token proj
+R1306:1306 fsharp_lexer_verified <> s:11 var
+def 1339:1352 <> lex_number_aux
+R1363:1373 fsharp_lexer_verified <> InputStream def
+binder 1355:1359 <> chars:12
+R1383:1385 Coq.Init.Datatypes <> nat ind
+binder 1377:1379 <> acc:13
+R1393:1395 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1390:1392 Coq.Init.Datatypes <> nat ind
+R1396:1406 fsharp_lexer_verified <> InputStream def
+R1419:1423 fsharp_lexer_verified <> chars:12 var
+R1434:1435 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1440:1440 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1444:1445 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1448:1448 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1441:1443 fsharp_lexer_verified <> acc:13 var
+R1446:1447 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1455:1458 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1477:1484 fsharp_lexer_verified <> is_digit def
+R1553:1553 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1557:1558 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1564:1564 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1554:1556 fsharp_lexer_verified <> acc:13 var
+R1559:1563 fsharp_lexer_verified <> chars:12 var
+R1500:1513 fsharp_lexer_verified <> lex_number_aux:14 def
+R1529:1532 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1539:1539 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1524:1526 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R1521:1523 fsharp_lexer_verified <> acc:13 var
+R1534:1536 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+def 1585:1594 <> lex_number
+R1601:1608 fsharp_lexer_verified <> LexState rec
+binder 1597:1597 <> s:16
+R1618:1620 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1613:1617 fsharp_lexer_verified <> Token ind
+R1621:1628 fsharp_lexer_verified <> LexState rec
+R1659:1672 fsharp_lexer_verified <> lex_number_aux def
+R1675:1679 fsharp_lexer_verified <> input proj
+R1681:1681 fsharp_lexer_verified <> s:16 var
+binder 1640:1642 <> num:17
+binder 1645:1653 <> remaining:18
+R1706:1706 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1717:1721 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1757:1757 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R1707:1714 fsharp_lexer_verified <> position proj
+R1716:1716 fsharp_lexer_verified <> s:16 var
+R1738:1740 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R1722:1727 Coq.Strings.String <> length def
+R1730:1734 fsharp_lexer_verified <> input proj
+R1736:1736 fsharp_lexer_verified <> s:16 var
+R1741:1746 Coq.Strings.String <> length def
+R1748:1756 fsharp_lexer_verified <> remaining:18 var
+binder 1695:1701 <> new_pos:19
+R1764:1764 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1773:1774 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1821:1821 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R1765:1768 fsharp_lexer_verified <> TInt constr
+R1770:1772 fsharp_lexer_verified <> num:17 var
+R1775:1784 fsharp_lexer_verified <> mkLexState constr
+R1787:1791 fsharp_lexer_verified <> input proj
+R1793:1793 fsharp_lexer_verified <> s:16 var
+R1796:1802 fsharp_lexer_verified <> new_pos:19 var
+R1805:1808 Coq.Init.Datatypes <> Some constr
+R1811:1814 fsharp_lexer_verified <> TInt constr
+R1816:1818 fsharp_lexer_verified <> num:17 var

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+<assembly><name>FSharpCompiler</name></assembly>
+<members>
+<member name="M:FSharpAST.operatorCompiledName(FSharpAST.Operator)">
+<summary>
+ Convert operator to its compiled name (from spec/basic-grammar-elements.md)
+</summary>
+</member>
+<member name="M:FSharpAST.prettyPrint(FSharpAST.FSharpAST,System.Int32)">
+<summary>
+ Pretty print AST for debugging
+</summary>
+</member>
+<member name="M:FSharpAST.astSize(FSharpAST.FSharpAST)">
+<summary>
+ Calculate AST size (from our Coq proof ast_size function)
+</summary>
+</member>
+<member name="M:FSharpLexer.lex(System.String)">
+<summary>
+ Lex entire input into token list
+</summary>
+</member>
+<member name="M:FSharpLexer.nextToken(FSharpLexer.LexerState)">
+<summary>
+ Main lexer function - get next token
+</summary>
+</member>
+<member name="M:FSharpLexer.lexOperator(FSharpLexer.LexerState)">
+<summary>
+ Lex an operator or symbolic token
+</summary>
+</member>
+<member name="M:FSharpLexer.lexString(FSharpLexer.LexerState)">
+<summary>
+ Lex a string literal
+</summary>
+</member>
+<member name="M:FSharpLexer.lexNumber(FSharpLexer.LexerState)">
+<summary>
+ Lex a number (int or float)
+</summary>
+</member>
+<member name="M:FSharpLexer.lexIdentifier(FSharpLexer.LexerState)">
+<summary>
+ Lex an identifier or keyword
+</summary>
+</member>
+<member name="M:FSharpLexer.skipBlockComment(FSharpLexer.LexerState,System.Int32)">
+<summary>
+ Skip block comment (handles nesting)
+</summary>
+</member>
+<member name="M:FSharpLexer.skipLineComment(FSharpLexer.LexerState)">
+<summary>
+ Skip single-line comment
+</summary>
+</member>
+<member name="M:FSharpLexer.skipWhitespace(FSharpLexer.LexerState)">
+<summary>
+ Skip whitespace
+</summary>
+</member>
+<member name="M:FSharpLexer.advance(FSharpLexer.LexerState)">
+<summary>
+ Advance position by one character
+</summary>
+</member>
+<member name="M:FSharpLexer.peekAhead(FSharpLexer.LexerState,System.Int32)">
+<summary>
+ Peek ahead n characters
+</summary>
+</member>
+<member name="M:FSharpLexer.peek(FSharpLexer.LexerState)">
+<summary>
+ Peek at current character without advancing
+</summary>
+</member>
+<member name="M:FSharpParser.parseWithValidation(Microsoft.FSharp.Collections.FSharpList{FSharpAST.Token})">
+<summary>
+ Parse with validation
+</summary>
+</member>
+<member name="M:FSharpParser.parseString(System.String)">
+<summary>
+ Parse string input directly
+</summary>
+</member>
+<member name="M:FSharpParser.parse(Microsoft.FSharp.Collections.FSharpList{FSharpAST.Token})">
+<summary>
+ Parse token stream into AST
+</summary>
+</member>
+<member name="M:FSharpParser.tryParse``1(Microsoft.FSharp.Core.FSharpFunc{FSharpParser.ParserState,Microsoft.FSharp.Core.FSharpResult{System.Tuple{``0,FSharpParser.ParserState},System.String}},FSharpParser.ParserState)">
+<summary>
+ Parse with error recovery
+</summary>
+</member>
+<member name="M:FSharpParser.tryConsume(FSharpParser.ParserState,FSharpAST.Token)">
+<summary>
+ Try to consume token, return new state if successful
+</summary>
+</member>
+<member name="M:FSharpParser.consume(FSharpParser.ParserState,FSharpAST.Token)">
+<summary>
+ Consume expected token or return error
+</summary>
+</member>
+<member name="M:FSharpParser.expect(FSharpParser.ParserState,FSharpAST.Token)">
+<summary>
+ Check if current token matches expected
+</summary>
+</member>
+<member name="M:FSharpParser.advance(FSharpParser.ParserState)">
+<summary>
+ Advance to next token
+</summary>
+</member>
+<member name="M:FSharpParser.peek(FSharpParser.ParserState)">
+<summary>
+ Peek at current token without consuming
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,75 @@
+DIGEST ba321ce13a58c88d223edb39f53ec9a9
+Ffsharp_SUCCESS
+R56:72 Coq.ZArith.ZArith <> <> lib
+ind 111:116 <> FSharp
+constr 121:123 <> Int
+R128:131 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R127:127 Coq.Numbers.BinNums <> Z ind
+R132:137 fsharp_SUCCESS <> FSharp:1 ind
+scheme 111:116 <> FSharp_rect
+scheme 111:116 <> FSharp_ind
+scheme 111:116 <> FSharp_rec
+scheme 111:116 <> FSharp_sind
+ind 177:179 <> X86
+constr 184:190 <> MOV_RAX
+R195:198 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R194:194 Coq.Numbers.BinNums <> Z ind
+R199:201 fsharp_SUCCESS <> X86:3 ind
+scheme 177:179 <> X86_rect
+scheme 177:179 <> X86_ind
+scheme 177:179 <> X86_rec
+scheme 177:179 <> X86_sind
+def 231:237 <> compile
+R244:249 fsharp_SUCCESS <> FSharp ind
+binder 240:240 <> f:5
+R254:256 fsharp_SUCCESS <> X86 ind
+R269:269 fsharp_SUCCESS <> f:5 var
+R276:278 fsharp_SUCCESS <> Int constr
+R285:291 fsharp_SUCCESS <> MOV_RAX constr
+def 331:341 <> fsharp_eval
+R348:353 fsharp_SUCCESS <> FSharp ind
+binder 344:344 <> f:7
+R358:358 Coq.Numbers.BinNums <> Z ind
+R371:371 fsharp_SUCCESS <> f:7 var
+R378:380 fsharp_SUCCESS <> Int constr
+def 426:433 <> x86_exec
+R440:442 fsharp_SUCCESS <> X86 ind
+binder 436:436 <> i:9
+R447:447 Coq.Numbers.BinNums <> Z ind
+R460:460 fsharp_SUCCESS <> i:9 var
+R467:473 fsharp_SUCCESS <> MOV_RAX constr
+prf 527:545 <> compiler_is_correct
+binder 556:556 <> n:11
+R587:589 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R561:568 fsharp_SUCCESS <> x86_exec def
+R571:577 fsharp_SUCCESS <> compile def
+R580:582 fsharp_SUCCESS <> Int constr
+R584:584 fsharp_SUCCESS <> n:11 var
+R590:600 fsharp_SUCCESS <> fsharp_eval def
+R603:605 fsharp_SUCCESS <> Int constr
+R607:607 fsharp_SUCCESS <> n:11 var
+prf 665:686 <> compiler_deterministic
+binder 697:697 <> f:12
+binder 699:700 <> x1:13
+binder 702:703 <> x2:14
+R722:725 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R717:719 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R708:714 fsharp_SUCCESS <> compile def
+R716:716 fsharp_SUCCESS <> f:12 var
+R720:721 fsharp_SUCCESS <> x1:13 var
+R740:743 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R735:737 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R726:732 fsharp_SUCCESS <> compile def
+R734:734 fsharp_SUCCESS <> f:12 var
+R738:739 fsharp_SUCCESS <> x2:14 var
+R746:748 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R744:745 fsharp_SUCCESS <> x1:13 var
+R749:750 fsharp_SUCCESS <> x2:14 var
+prf 824:844 <> semantic_preservation
+binder 855:855 <> f:15
+R880:882 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R860:867 fsharp_SUCCESS <> x86_exec def
+R870:876 fsharp_SUCCESS <> compile def
+R878:878 fsharp_SUCCESS <> f:15 var
+R883:893 fsharp_SUCCESS <> fsharp_eval def
+R895:895 fsharp_SUCCESS <> f:15 var
