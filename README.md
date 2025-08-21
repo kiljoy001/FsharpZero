@@ -278,8 +278,8 @@ make test
 
 ## 📬 Contact
 
-- **GitHub**: [@YourUsername](https://github.com/YourUsername)
-- **Email**: fsharp-zero@yourproject.org
+- **GitHub**: [@kiljoy001](https://github.com/kiljoy001)
+- **Email**: kiljoy001@gmail.com
 - **Discord**: [F#ZERO Community](https://discord.gg/fsharp-zero)
 - **Twitter**: [@FSharpZero](https://twitter.com/FSharpZero)
 
